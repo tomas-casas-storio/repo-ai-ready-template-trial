@@ -2,17 +2,17 @@
 # Everything else can merge without a human when spec-approved, low risk and green.
 # Keep in sync with .github/risk/high-risk-paths.
 # The agent identity must NEVER appear here.
-# TODO: replace @your-org/repo-maintainers with the real team.
+# TODO: replace @tomas-casas-storio with the real team.
 
-/.github/              @your-org/repo-maintainers
-/scripts/              @your-org/repo-maintainers
-/Makefile              @your-org/repo-maintainers
-/AGENTS.md             @your-org/repo-maintainers
-/CLAUDE.md             @your-org/repo-maintainers
-/docs/decisions/       @your-org/repo-maintainers
-/eslint.config.*       @your-org/repo-maintainers
-/vitest.config.*       @your-org/repo-maintainers
-/tsconfig*.json        @your-org/repo-maintainers
-/package.json          @your-org/repo-maintainers
-/pnpm-lock.yaml        @your-org/repo-maintainers
-/.devcontainer/        @your-org/repo-maintainers
+/.github/              @tomas-casas-storio
+/scripts/              @tomas-casas-storio
+/Makefile              @tomas-casas-storio
+/AGENTS.md             @tomas-casas-storio
+/CLAUDE.md             @tomas-casas-storio
+/docs/decisions/       @tomas-casas-storio
+/eslint.config.*       @tomas-casas-storio
+/vitest.config.*       @tomas-casas-storio
+/tsconfig*.json        @tomas-casas-storio
+/package.json          @tomas-casas-storio
+/pnpm-lock.yaml        @tomas-casas-storio
+/.devcontainer/        @tomas-casas-storio
