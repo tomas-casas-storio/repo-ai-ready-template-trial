@@ -19,3 +19,6 @@ gh api -X PATCH "repos/$repo" \
   -F allow_auto_merge=true -F delete_branch_on_merge=true \
   -F allow_squash_merge=true -F allow_merge_commit=false -F allow_rebase_merge=false > /dev/null
 echo "repo merge settings applied"
+
+# Dependency graph + alerts (needed by dependency-review in security.yml).
+gh api -X PUT "repos/$repo/vulnerability-alerts" > /dev/null && echo "dependency graph and alerts enabled"
