@@ -14,6 +14,7 @@ const MAPPINGS: Readonly<Record<string, Mapping>> = {
   "alpha:standard": { sku: "A-100", line: "L1" },
   "alpha:pro": { sku: "A-200", line: "L1" },
   "beta:standard": { sku: "B-100", line: "L2" },
+  "beta:pro": { sku: "B-200", line: "L2" },
 };
 
 export class UnsupportedVariantError extends Error {

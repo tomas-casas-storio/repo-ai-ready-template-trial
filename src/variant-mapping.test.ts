@@ -22,8 +22,14 @@ describe("resolveMapping", () => {
   });
 
   it("AC3: rejects unsupported combinations with a validation error", () => {
-    expect(() => resolveMapping("beta", "pro")).toThrow(
+    expect(() => resolveMapping("beta", "max")).toThrow(
       UnsupportedVariantError,
     );
+  });
+});
+
+describe("beta pro", () => {
+  it("AC4: resolves beta pro", () => {
+    expect(resolveMapping("beta", "pro")).toEqual({ sku: "B-200", line: "L2" });
   });
 });
