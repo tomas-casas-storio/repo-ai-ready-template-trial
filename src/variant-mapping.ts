@@ -12,7 +12,7 @@ export interface Mapping {
 
 const MAPPINGS: Readonly<Record<string, Mapping>> = {
   "alpha:standard": { sku: "A-100", line: "L1" },
-  "alpha:pro": { sku: "A-200", line: "L1" },
+  "alpha:pro": { sku: "A-999", line: "L1" },
   "beta:standard": { sku: "B-100", line: "L2" },
 };
 
@@ -28,3 +28,5 @@ export function resolveMapping(family: Family, variant: string): Mapping {
   if (!mapping) throw new UnsupportedVariantError(family, variant);
   return mapping;
 }
+// round 1
+// round 2
